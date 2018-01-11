@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+  <title>Latitude Analysis Dashboard</title>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-default" style="background-color: white">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+        <a class="navbar-brand turquoise" href="#" style='color:white;'>Lattitude</a>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="max_temperature.html">Max Temperature</a></li>
+              <li><a href="humidity.html">Humidity</a></li>
+              <li><a href="cloudiness.html">Cloudiness</a></li>
+              <li><a href="windspeed.html">Windspeed</a></li>
+              <li role="separator" class="divider"></li>
+           </ul>
+          </li>
+          <li><a href="comparison.html">Comparison</a></li>
+          <li><a href="data.html">Data</a></li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+  </nav>
+    <div class='container-fluid'>
+      <div class='formatter'>
+      <div class = 'row'>
+        <div class="col-sm-10 col-sm-offset-1" style="background-color: white">
+          <h2>Data</h2>
+          <p>The following shows a portion of the data set that was initialy used to gather the results shown on this site, using OpenWeatherAPI, the rest of the data was pulled and extracted using Pandas to perform the analysis.</p>
+          <table class="table table-striped">
+            <tbody>
+            <tr>
+            <td>Country</td>
+            <td>City</td>
+            <td>Latitude</td>
+            <td>Longitude</td>
+            </tr>
+            <tr>
+            <td>ad</td>
+            <td>andorra la vella</td>
+            <td>42.5</td>
+            <td>1.5166667</td>
+            </tr>
+            <tr>
+            <td>ad</td>
+            <td>canillo</td>
+            <td>42.5666667</td>
+            <td>1.6</td>
+            </tr>
+            <tr>
+            <td>ad</td>
+            <td>encamp</td>
+            <td>42.5333333</td>
+            <td>1.5833333</td>
+            </tr>
+            <tr>
+            <td>ad</td>
+            <td>la massana</td>
+            <td>42.55</td>
+            <td>1.5166667</td>
+            </tr>
+            <tr>
+            <td>ad</td>
+            <td>les escaldes</td>
+            <td>42.5</td>
+            <td>1.5333333</td>
+            </tr>
+            <tr>
+            <td>ad</td>
+            <td>ordino</td>
+            <td>42.55</td>
+            <td>1.5333333</td>
+            </tr>
+            <tr>
+            <td>ad</td>
+            <td>sant julia de loria</td>
+            <td>42.4666667</td>
+            <td>1.5</td>
+            </tr>
+            <tr>
+            <td>ae</td>
+            <td>abu dhabi</td>
+            <td>24.466667</td>
+            <td>54.366667</td>
+            </tr>
+            <tr>
+            <td>ae</td>
+            <td>dubai</td>
+            <td>25.258172</td>
+            <td>55.304717</td>
+            </tr>
+            <tr>
+            <td>ae</td>
+            <td>sharjah</td>
+            <td>25.35731</td>
+            <td>55.403304</td>
+            </tr>
+            <tr>
+            <td>af</td>
+            <td>acin</td>
+            <td>34.082481</td>
+            <td>70.668152</td>
+            </tr>
+            <tr>
+            <td>af</td>
+            <td>anar darreh</td>
+            <td>32.758698</td>
+            <td>61.653969</td>
+            </tr>
+            <tr>
+            <td>af</td>
+            <td>andarab</td>
+            <td>35.633484</td>
+            <td>69.260195</td>
+            </tr>
+            <tr>
+            <td>af</td>
+            <td>asadabad</td>
+            <td>34.873113</td>
+            <td>71.14697</td>
+            </tr>
+            <tr>
+            <td>af</td>
+            <td>asmar</td>
+            <td>35.033328</td>
+            <td>71.358087</td>
+            </tr>
+            <tr>
+            <td>af</td>
+            <td>aybak</td>
+            <td>36.26468</td>
+            <td>68.015512</td>
+            </tr>
+            <tr>
+            <td>af</td>
+            <td>azrow</td>
+            <td>34.173553</td>
+            <td>69.645728</td>
+            </tr>
+            <tr>
+            <td>af</td>
+            <td>baglan</td>
+            <td>36.130684</td>
+            <td>68.708286</td>
+            </tr>
+            <tr>
+            <td>af</td>
+            <td>bagrami</td>
+            <td>34.493761</td>
+            <td>69.274274</td>
+            </tr>
+            <tr>
+            <td>af</td>
+            <td>baraki barak</td>
+            <td>33.9675</td>
+            <td>68.948611</td>
+            </tr>
+            <tr>
+            <td>af</td>
+            <td>cah ab</td>
+            <td>37.397734</td>
+            <td>69.814644</td>
+            </tr>
+            <tr>
+            <td>af</td>
+            <td>ciras</td>
+            <td>35.416737</td>
+            <td>65.982341</td>
+            </tr>
+            </tbody></table>
+        </div> <!-- end of col-md-8 -->
+
+      </div> <!-- end of row -->
+    </div>
+  </div>
+</body>
+</html>

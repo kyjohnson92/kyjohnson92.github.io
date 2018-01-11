@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+  <title>Latitude Analysis Dashboard</title>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-default" style="background-color: white">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+        <a class="navbar-brand turquoise" href="#" style='color:white;'>Lattitude</a>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="max_temperature.html">Max Temperature</a></li>
+              <li><a href="humidity.html">Humidity</a></li>
+              <li><a href="cloudiness.html">Cloudiness</a></li>
+              <li><a href="windspeed.html">Windspeed</a></li>
+              <li role="separator" class="divider"></li>
+           </ul>
+          </li>
+          <li><a href="comparison.html">Comparison</a></li>
+          <li><a href="data.html">Data</a></li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+  </nav>
+    <div class='container-fluid'>
+      <div class='formatter'>
+      <div class = 'row'>
+        <div class="col-sm-12 col-lg-7">
+          <div class = 'white'>
+            <div class="boxwrapper">
+             <h1 class ='header' style="color: darkcyan">Humidity</h1>
+             <div class="col-xs-12">
+              <img id = 'temp' src='LatVsHum.png' class='full-width-pict'>
+
+             </div>
+              <p class ='para'>Outside the extreme ends of the Earth, its hard to say latitude plays a significant role in the humidity of an area, humidity seems to persist at various levels across the majority of latitudes.</p>
+            </div> <!-- end of boxwrapper -->
+          </div> <!-- end of white -->
+        </div> <!-- end of col-md-8 -->
+
+        <div class='col-sm-12 col-lg-5'>
+         <div class = 'whitetwo'>
+
+           <div class="box row">
+             <h1 class ='header' style= "color: darkcyan; text-align: center">Visualizations</h1>
+             <img id = 'temp' src='LatVsTemp.png' class='img-thumbnail col-sm-3 col-lg-6' />
+             <img id = 'Hum' src='LatVsHum.png' class='img-thumbnail col-sm-3 col-lg-6' />
+             <img id = 'cloud' src='LatVsCloud.png' class='img-thumbnail col-sm-3 col-lg-6' />
+             <img id = 'wind' src='LatVsWind.png' class='img-thumbnail col-sm-3 col-lg-6 ' />
+            </div>
+
+          </div> <!-- end of col-md-4 -->
+        </div>
+      </div> <!-- end of row -->
+    </div>
+  </div>
+</body>
+</html>
