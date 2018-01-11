@@ -1,12 +1,96 @@
-h1 {
-	color: cadetblue;
-	font-size: 40px
+body {background-color: Gainsboro;}
+
+.imgformat {
+	padding: 10px;
+	box-sizing: border-box;
+	text-align: center;
 }
 
-th {
-	color: blue;
+.white {
+	margin-top: 30px;
+	padding-top: 1px;
+	background: white;
+	margin-left: 45px;
+	margin-right: 40px;
+}
+.whitetwo {
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-bottom: 35px;
+	margin-top: 30px;
+	background: white;
+	margin-left: 10px;
+	margin-right: 45px;
+	margin-bottom: 10px;
 }
 
-.darkgrey {
-	background-color: darkgrey;
+
+.navbar-header{
+    width:200px;
+    margin-left:5.50% !important
+}
+
+.para{
+	margin-top: 30px;
+	margin-bottom: 20px;
+	font-size: 18px;
+}
+
+
+
+.turquoise {
+	font-size: 24px;
+	font-weight: bold;
+	background: DarkCyan;
+	font-family: "Times New Roman", Times, serif;
+
+}
+
+.formatter{
+	margin-left: 40px;
+	margin-right: 40px;
+	padding-bottom: 20px;
+
+
+}
+.boxwrapper {
+	margin-top: 30px;
+	margin-left: 35px;
+	margin-right: 35px;
+	margin-bottom: 30px;
+	padding-bottom: 20px;
+
+}
+
+.header {
+
+	padding-top: 20px;
+	padding-bottom: 15px;
+	border-bottom: 1px solid #ddd;
+}
+
+.header_two {
+	padding-top: 20px;
+	padding-bottom: 15px;
+	border-bottom: 1px solid #ddd;
+}
+
+
+.pict {
+	margin-right: 20px;
+	margin-left: 20px;
+	float: left;
+}
+
+.full-width-pict {
+  width: 100%;
+  margin-right: 20px;
+  margin-left: 20px;
+  padding-right: 75px;
+}
+
+.picturewrapper {
+	height: 50px;
+
+
 }
